@@ -42,7 +42,12 @@ public class Student {
 		return "id: " + this.id + ", name: " + this.name + ", grade: " + this.grade;
 	}
 
-
-
+  @Override
+  public boolean equals(Student s) {
+    if (s.getId() == this.id) {
+      return true;
+    }
+    return false;
+  }
 
 }

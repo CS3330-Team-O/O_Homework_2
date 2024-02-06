@@ -4,8 +4,8 @@ public class StudentManager {
   private Student[] students;
 
   public StudentManager() {
-    this.students = new Student[10];
   }
+
 
   public boolean readFromFile(String fileName) {
 
