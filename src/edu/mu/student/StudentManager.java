@@ -1,10 +1,10 @@
 package edu.mu.student;
 
 public class StudentManager {
-  private StudentManager[] students;
+  private Student[] students;
 
   public StudentManager() {
-    this.students = new StudentManager[10];
+    this.students = new Student[10];
   }
 
   public boolean readFromFile(String fileName) {
@@ -23,8 +23,8 @@ public class StudentManager {
 
   public boolean updateStudentGradeById(int id, double grade) {
     for (int i = 0; i < this.students.length; i++) {
-      if (this.students[i].id == id) {
-        this.students[i].grade = grade;
+      if (this.students[i].getId() == id) {
+        this.students[i].setGrade(grade);
         return true;
       }
     }
