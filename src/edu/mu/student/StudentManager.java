@@ -8,7 +8,15 @@ public class StudentManager {
 		
 	}
 
+	public StudentManager[] getStudents() {
+		return students;
+	}
 
+	public void setStudents(StudentManager[] students) {
+		this.students = students;
+	}
+
+	
 	/*public boolean readFromFile(String fileName) {
 	
 	}*/
