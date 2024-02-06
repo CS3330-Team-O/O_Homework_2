@@ -20,4 +20,14 @@ public class StudentManager {
       System.out.println(this.students[i].toString());
     }
   }
+
+  public boolean updateStudentGradeById(int id, double grade) {
+    for (int i = 0; i < this.students.length; i++) {
+      if (this.students[i].id == id) {
+        this.students[i].grade = grade;
+        return true;
+      }
+    }
+    return false;
+  }
 }
