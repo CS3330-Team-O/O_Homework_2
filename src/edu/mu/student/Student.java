@@ -36,13 +36,13 @@ public class Student {
 	public void setGrade(double grade) {
 		this.grade = grade;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "id: " + this.id + ", name: " + this.name + ", grade: " + this.grade;
 	}
-	
-	
+
+
 
 
 }
