@@ -4,10 +4,12 @@ public class StudentManager {
 	private StudentManager[] students;
 	
 	public StudentManager() {
-		this.students = new StudentManager[];
+		this.students = new StudentManager[10];
+		
 	}
-}
 
-public boolean readFromFile(String fileName) {
+
+	/*public boolean readFromFile(String fileName) {
 	
+	}*/
 }
