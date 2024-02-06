@@ -44,8 +44,8 @@ public class Student {
   }
 
   @Override
-  public boolean equals(Student s) {
-    if (s.getId() == this.id) {
+  public boolean equals(int id) {
+    if (id == this.id) {
       return true;
     }
     return false;
