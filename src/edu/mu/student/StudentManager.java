@@ -1,23 +1,42 @@
 package edu.mu.student;
 
 public class StudentManager {
-	private StudentManager[] students;
+	private Student[] students;
 	
 	public StudentManager() {
-		this.students = new StudentManager[10];
+		
+	}
+	public StudentManager(Student[] students) {
+		this.students = new Student[10];
 		
 	}
 
-	public StudentManager[] getStudents() {
+	public Student[] getStudents() {
 		return students;
 	}
 
-	public void setStudents(StudentManager[] students) {
+	public void setStudents(Student[] students) {
 		this.students = students;
 	}
 
 	
-	/*public boolean readFromFile(String fileName) {
+	public boolean readFromFile(String fileName) {
 	
-	}*/
+		return true;
+	}
+	
+	public boolean searchStudentById(int id) {
+		for (int i=0; i < students.length; i++)
+		{
+			if(students[i].equals(id)) {
+				System.out.println(students[i].toString());
+				return true;
+			}
+		}
+		
+		System.out.println("Student ID not found!");
+		return false;
+
+	}
+
 }
