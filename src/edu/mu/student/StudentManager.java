@@ -8,7 +8,6 @@ public class StudentManager {
 	}
 	public StudentManager(Student[] students) {
 		this.students = new Student[10];
-		
 	}
 
 	public Student[] getStudents() {
@@ -19,6 +18,9 @@ public class StudentManager {
 		this.students = students;
 	}
 
+	public boolean readFromFile(String fileName) {
+
+	}
 	
 	public boolean readFromFile(String fileName) {
 	
@@ -38,5 +40,5 @@ public class StudentManager {
 		return false;
 
 	}
-
 }
+
