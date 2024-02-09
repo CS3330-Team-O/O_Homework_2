@@ -64,10 +64,15 @@ public class StudentManager {
 				return true;
 			}
 		}
-		
 		System.out.println("Student ID not found!");
 		return false;
 
+	}
+	
+	public void displayStudents() {
+		for (int i = 0; i < this.students.length; i++) {
+			System.out.println(this.students[i].toString());
+		}
 	}
 }
 
