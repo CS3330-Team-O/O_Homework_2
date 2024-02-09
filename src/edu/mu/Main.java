@@ -18,7 +18,7 @@ public class Main {
     System.out.println("Search student by ID 101: ");
     boolean studentFound = studentManager.searchStudentById(101);
     // Update the grade of a student by ID.
-    System.out.println("Update Student ID 102 to grade 95: ");
+    System.out.println("Update student ID 102 to grade 95: ");
     boolean studentGradeUpdateStatus = studentManager.updateStudentGradeById(102, 95);
     // Display all students after the update.
     System.out.println("Students: ");
