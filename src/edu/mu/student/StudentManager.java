@@ -7,11 +7,11 @@ import java.util.Scanner;
 
 public class StudentManager {
 	private Student[] students;
-	
+
 	public StudentManager() {
-		
+
 	}
-	
+
 	public StudentManager(Student[] students) {
 		this.students = new Student[10];
 	}
@@ -49,13 +49,13 @@ public class StudentManager {
 			}
 			scanner.close();
 			return true;
-		} 
+		}
 		catch (FileNotFoundException e) {
 			System.out.println("File not found!");
 			return false;
 		}
 	}
-	
+
 	public boolean searchStudentById(int id) {
 		for (int i=0; i < students.length; i++)
 		{
@@ -68,7 +68,7 @@ public class StudentManager {
 		return false;
 
 	}
-	
+
 	public void displayStudents() {
 		for (int i = 0; i < this.students.length; i++) {
 			System.out.println(this.students[i].toString());
