@@ -43,7 +43,6 @@ public class Student {
     return "id: " + this.id + ", name: " + this.name + ", grade: " + this.grade;
   }
 
-  @Override
   public boolean equals(int id) {
     if (id == this.id) {
       return true;
