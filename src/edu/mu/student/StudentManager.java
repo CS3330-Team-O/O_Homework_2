@@ -29,7 +29,6 @@ public class StudentManager {
 		try {
 			this.students = new Student[(int) Files.lines(path).count()];
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
@@ -44,8 +43,6 @@ public class StudentManager {
 				Student myStudent = new Student(id, name, grade);
 				students[counter] = myStudent;
 				counter++;
-				System.out.println("\nStudent Object: ");
-				System.out.println(myStudent);
 			}
 			scanner.close();
 			return true;
@@ -66,7 +63,20 @@ public class StudentManager {
 		}
 		System.out.println("Student ID not found!");
 		return false;
-
+	}
+	
+	public boolean updateStudentGradeById(int id, double grade) {
+		boolean found = searchStudentById(id);
+		if(found == true) {
+			for (int i=0; i < students.length; i++)
+			{
+				if(students[i].equals(id)) {
+					students[i].setGrade(grade);
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 	
 	public void displayStudents() {
