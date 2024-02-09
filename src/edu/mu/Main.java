@@ -1,11 +1,12 @@
 package edu.mu;
+
 import edu.mu.student.StudentManager;
 
 public class Main {
 
   public static void main(String[] args) {
     // Instantiate StudentManager, perform operations based on the requirements.
-	System.out.println("Create StudentManager");
+    System.out.println("Create StudentManager");
     StudentManager studentManager = new StudentManager();
     // Read student data from a file and initialize Student objects.
     System.out.println("Read from file");
