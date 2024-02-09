@@ -2,10 +2,10 @@ package edu.mu.student;
 
 public class StudentManager {
 	private StudentManager[] students;
-	
+
 	public StudentManager() {
 		this.students = new StudentManager[10];
-		
+
 	}
 
 	public StudentManager[] getStudents() {
@@ -16,8 +16,8 @@ public class StudentManager {
 		this.students = students;
 	}
 
-	
+
 	/*public boolean readFromFile(String fileName) {
-	
+
 	}*/
 }
